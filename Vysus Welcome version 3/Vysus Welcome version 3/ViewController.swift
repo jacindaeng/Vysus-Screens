@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         let rippleShape = CAShapeLayer()
         rippleShape.bounds = CGRect(x: 0, y: 0, width: referenceView.bounds.size.width, height: referenceView.bounds.size.height)
         rippleShape.path = path.cgPath
-        rippleShape.fillColor = UIColor.clear.cgColor
+        rippleShape.fillColor = UIColor.gray.cgColor
         rippleShape.strokeColor = UIColor.gray.cgColor
         rippleShape.lineWidth = 4
         rippleShape.position = shapePosition
@@ -65,7 +65,7 @@ class ViewController: UIViewController {
         let animation = CAAnimationGroup()
         animation.animations = [scaleAnim, opacityAnim]
         animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
-        animation.duration = CFTimeInterval(1.3)
+        animation.duration = CFTimeInterval(2)
         animation.repeatCount = 100
         animation.isRemovedOnCompletion = true
         rippleShape.add(animation, forKey: "rippleEffect")
