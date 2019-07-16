@@ -17,10 +17,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //gifImageView.loadGif(name: "gifexample")
         uiBackground.backgroundColor = #colorLiteral(red: 0.7058823529, green: 0.4823529412, blue: 0.5490196078, alpha: 1)
         logoImageView.image = UIImage(named: "Visus")
-        //animationImageView.image = UIImage(named: "purple")
         animateImage()
         // Do any additional setup after loading the view.
     }
@@ -45,8 +43,8 @@ class ViewController: UIViewController {
         let rippleShape = CAShapeLayer()
         rippleShape.bounds = CGRect(x: 0, y: 0, width: referenceView.bounds.size.width, height: referenceView.bounds.size.height)
         rippleShape.path = path.cgPath
-        rippleShape.fillColor = UIColor.gray.cgColor
-        rippleShape.strokeColor = UIColor.gray.cgColor
+        rippleShape.fillColor = #colorLiteral(red: 0.9647058824, green: 0.8352941176, blue: 0.7960784314, alpha: 1)
+        rippleShape.strokeColor = #colorLiteral(red: 0.9647058824, green: 0.8352941176, blue: 0.7960784314, alpha: 1)
         rippleShape.lineWidth = 4
         rippleShape.position = shapePosition
         rippleShape.opacity = 0
@@ -65,7 +63,7 @@ class ViewController: UIViewController {
         let animation = CAAnimationGroup()
         animation.animations = [scaleAnim, opacityAnim]
         animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
-        animation.duration = CFTimeInterval(2)
+        animation.duration = CFTimeInterval(4.5)
         animation.repeatCount = 100
         animation.isRemovedOnCompletion = true
         rippleShape.add(animation, forKey: "rippleEffect")
