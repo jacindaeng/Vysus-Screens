@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3E4224F622DE557100A22FBB /* PersonalizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4224F522DE557100A22FBB /* PersonalizationViewController.swift */; };
+		3E4224FA22DE991000A22FBB /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E4224F922DE991000A22FBB /* email.png */; };
+		3E42250022DE9A8400A22FBB /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E4224FF22DE9A8400A22FBB /* instagram.png */; };
+		3E42250222DE9A8A00A22FBB /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E42250122DE9A8900A22FBB /* facebook.png */; };
 		3EDAEF4322DC58EA00EA4DF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEF4222DC58EA00EA4DF1 /* AppDelegate.swift */; };
 		3EDAEF4522DC58EA00EA4DF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEF4422DC58EA00EA4DF1 /* ViewController.swift */; };
 		3EDAEF4822DC58EA00EA4DF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF4622DC58EA00EA4DF1 /* Main.storyboard */; };
@@ -37,10 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3E4224E922DE4D3700A22FBB /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
-		3E4224EB22DE4D3700A22FBB /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
-		3E4224EF22DE4D7C00A22FBB /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
 		3E4224F522DE557100A22FBB /* PersonalizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizationViewController.swift; sourceTree = "<group>"; };
+		3E4224F922DE991000A22FBB /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
+		3E4224FF22DE9A8400A22FBB /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = instagram.png; path = ../../instagram.png; sourceTree = "<group>"; };
+		3E42250122DE9A8900A22FBB /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook.png; path = ../../facebook.png; sourceTree = "<group>"; };
 		3EDAEF3F22DC58EA00EA4DF1 /* Vysus Welcome version 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vysus Welcome version 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EDAEF4222DC58EA00EA4DF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EDAEF4422DC58EA00EA4DF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,9 +118,9 @@
 				3EDAEF4922DC58EB00EA4DF1 /* Assets.xcassets */,
 				3EDAEF4E22DC58EB00EA4DF1 /* Info.plist */,
 				3EEA9FA322DD3D3500F45397 /* Visus.png */,
-				3E4224EF22DE4D7C00A22FBB /* email.png */,
-				3E4224EB22DE4D3700A22FBB /* facebook.png */,
-				3E4224E922DE4D3700A22FBB /* instagram.png */,
+				3E42250122DE9A8900A22FBB /* facebook.png */,
+				3E4224F922DE991000A22FBB /* email.png */,
+				3E4224FF22DE9A8400A22FBB /* instagram.png */,
 			);
 			path = "Vysus Welcome version 3";
 			sourceTree = "<group>";
@@ -244,8 +247,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E4224FA22DE991000A22FBB /* email.png in Resources */,
+				3E42250222DE9A8A00A22FBB /* facebook.png in Resources */,
 				3EDAEF4A22DC58EB00EA4DF1 /* Assets.xcassets in Resources */,
 				3EEA9FA422DD3D3500F45397 /* Visus.png in Resources */,
+				3E42250022DE9A8400A22FBB /* instagram.png in Resources */,
 				3EDAEF4822DC58EA00EA4DF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

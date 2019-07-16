@@ -10,8 +10,10 @@ import UIKit
 
 class AuthenticationViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+//        emailImageView.image = UIImage(named: "email")
+//        facebookImageView.image = UIImage(named: "facebook")
+//        instagramImageView.image = UIImage(named: "instagram")
+
 
         // Do any additional setup after loading the view.
     }
@@ -27,4 +29,4 @@ class AuthenticationViewController: UIViewController {
     }
     */
 
-}
+
