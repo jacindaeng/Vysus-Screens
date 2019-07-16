@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E4224EC22DE4D3700A22FBB /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E4224E922DE4D3700A22FBB /* instagram.png */; };
-		3E4224EE22DE4D3700A22FBB /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E4224EB22DE4D3700A22FBB /* facebook.png */; };
-		3E4224F022DE4D7C00A22FBB /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E4224EF22DE4D7C00A22FBB /* email.png */; };
 		3EDAEF4322DC58EA00EA4DF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEF4222DC58EA00EA4DF1 /* AppDelegate.swift */; };
 		3EDAEF4522DC58EA00EA4DF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEF4422DC58EA00EA4DF1 /* ViewController.swift */; };
 		3EDAEF4822DC58EA00EA4DF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF4622DC58EA00EA4DF1 /* Main.storyboard */; };
@@ -17,7 +14,10 @@
 		3EDAEF5822DC58EB00EA4DF1 /* Vysus_Welcome_version_3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEF5722DC58EB00EA4DF1 /* Vysus_Welcome_version_3Tests.swift */; };
 		3EDAEF6322DC58EB00EA4DF1 /* Vysus_Welcome_version_3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEF6222DC58EB00EA4DF1 /* Vysus_Welcome_version_3UITests.swift */; };
 		3EDAEF7122DC58FE00EA4DF1 /* swift + gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEF7022DC58FE00EA4DF1 /* swift + gif.swift */; };
+		3EDAEF7322DC599900EA4DF1 /* gifexample.gif in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF7222DC599900EA4DF1 /* gifexample.gif */; };
 		3EEA9FA422DD3D3500F45397 /* Visus.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EEA9FA322DD3D3500F45397 /* Visus.png */; };
+		3EEA9FA622DD3DEA00F45397 /* purple.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EEA9FA522DD3DEA00F45397 /* purple.png */; };
+		CF0B3E1B22DE5340007EB881 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0B3E1A22DE5340007EB881 /* AuthenticationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +55,8 @@
 		3EDAEF6422DC58EB00EA4DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EDAEF7022DC58FE00EA4DF1 /* swift + gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "swift + gif.swift"; sourceTree = "<group>"; };
 		3EEA9FA322DD3D3500F45397 /* Visus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Visus.png; path = "../../../New Technologist/Visus.png"; sourceTree = "<group>"; };
+		3EEA9FA522DD3DEA00F45397 /* purple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = purple.png; sourceTree = "<group>"; };
+		CF0B3E1A22DE5340007EB881 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				3EDAEF4222DC58EA00EA4DF1 /* AppDelegate.swift */,
 				3EDAEF4422DC58EA00EA4DF1 /* ViewController.swift */,
 				3EDAEF4622DC58EA00EA4DF1 /* Main.storyboard */,
+				CF0B3E1A22DE5340007EB881 /* AuthenticationViewController.swift */,
 				3EDAEF4922DC58EB00EA4DF1 /* Assets.xcassets */,
 				3EDAEF4E22DC58EB00EA4DF1 /* Info.plist */,
 				3EEA9FA322DD3D3500F45397 /* Visus.png */,
@@ -271,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF0B3E1B22DE5340007EB881 /* AuthenticationViewController.swift in Sources */,
 				3EDAEF4522DC58EA00EA4DF1 /* ViewController.swift in Sources */,
 				3EDAEF7122DC58FE00EA4DF1 /* swift + gif.swift in Sources */,
 				3EDAEF4322DC58EA00EA4DF1 /* AppDelegate.swift in Sources */,
