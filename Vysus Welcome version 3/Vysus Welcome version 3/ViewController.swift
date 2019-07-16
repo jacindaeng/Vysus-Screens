@@ -17,8 +17,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         uiBackground.backgroundColor = #colorLiteral(red: 0.7058823529, green: 0.4823529412, blue: 0.5490196078, alpha: 1)
-        logoImageView.image = UIImage(na
-        
+        logoImageView.image = UIImage(named: "Visus")
+        animateImage()
+        logoImageView.layer.cornerRadius = 100.0
         // Do any additional setup after loading the view.
     }
     
@@ -61,8 +62,8 @@ class ViewController: UIViewController {
         /*! Group the opacity and scale animations */
         let animation = CAAnimationGroup()
         animation.animations = [scaleAnim, opacityAnim]
-        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
-        animation.duration = CFTimeInterval(4.5)
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        animation.duration = CFTimeInterval(4)
         animation.repeatCount = 100
         animation.isRemovedOnCompletion = true
         rippleShape.add(animation, forKey: "rippleEffect")
