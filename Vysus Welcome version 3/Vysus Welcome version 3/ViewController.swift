@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var smallerImageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet var uiBackground: UIView!
     @IBOutlet weak var logoImageView: UIImageView!
    
@@ -20,6 +22,9 @@ class ViewController: UIViewController {
         logoImageView.image = UIImage(named: "Visus")
         animateImage()
         logoImageView.layer.cornerRadius = 100.0
+        imageView.layer.cornerRadius = 113.0
+        smallerImageView.layer.cornerRadius = 135.0
+        //imageView.layer.cornerRadius = 100.0
         // Do any additional setup after loading the view.
     }
     
@@ -28,7 +33,8 @@ class ViewController: UIViewController {
     }
     
     func animateImage() { //function called addRippleEffect
-        addRippleEffect(to: logoImageView)
+        addRippleEffect(to: imageView)
+        addRippleEffect(to: smallerImageView)
     }
 
     @IBAction func animateButton(_ sender: UIButton) {
@@ -43,9 +49,9 @@ class ViewController: UIViewController {
         let rippleShape = CAShapeLayer()
         rippleShape.bounds = CGRect(x: 0, y: 0, width: referenceView.bounds.size.width, height: referenceView.bounds.size.height)
         rippleShape.path = path.cgPath
-        rippleShape.fillColor = #colorLiteral(red: 0.9647058824, green: 0.8352941176, blue: 0.7960784314, alpha: 1)
-        rippleShape.strokeColor = #colorLiteral(red: 0.9647058824, green: 0.8352941176, blue: 0.7960784314, alpha: 1)
-        rippleShape.lineWidth = 4
+        rippleShape.fillColor = UIColor.clear.cgColor
+        rippleShape.strokeColor =  #colorLiteral(red: 0.9647058824, green: 0.8352941176, blue: 0.7960784314, alpha: 1)
+        rippleShape.lineWidth = 25
         rippleShape.position = shapePosition
         rippleShape.opacity = 0
 
@@ -62,10 +68,10 @@ class ViewController: UIViewController {
         /*! Group the opacity and scale animations */
         let animation = CAAnimationGroup()
         animation.animations = [scaleAnim, opacityAnim]
-        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
-        animation.duration = CFTimeInterval(4)
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
+        animation.duration = CFTimeInterval(3.5)
         animation.repeatCount = 100
-        animation.isRemovedOnCompletion = true
+        animation.isRemovedOnCompletion = false
         rippleShape.add(animation, forKey: "rippleEffect")
     }
 }
