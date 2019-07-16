@@ -43,6 +43,10 @@
                                 <rect key="frame" x="110" y="426" width="195" height="188"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="WNn-Oe-Wgk">
+                                <rect key="frame" x="128" y="870" width="154" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" red="0.70588235294117641" green="0.4823529411764706" blue="0.5490196078431373" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -147,10 +151,10 @@
             </objects>
             <point key="canvasLocation" x="1433" y="710"/>
         </scene>
-        <!--View Controller-->
+        <!--Authentication View Controller-->
         <scene sceneID="ATj-Z3-A8O">
             <objects>
-                <viewController id="ugF-1A-Nfv" sceneMemberID="viewController">
+                <viewController id="ugF-1A-Nfv" customClass="AuthenticationViewController" customModule="Vysus_Welcome_version_3" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Efj-Bt-dSP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
