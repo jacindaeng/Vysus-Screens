@@ -9,8 +9,18 @@
 /* Begin PBXBuildFile section */
 		3E4224F622DE557100A22FBB /* PersonalizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4224F522DE557100A22FBB /* PersonalizationViewController.swift */; };
 		3E4224FA22DE991000A22FBB /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E4224F922DE991000A22FBB /* email.png */; };
-		3E42250022DE9A8400A22FBB /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E4224FF22DE9A8400A22FBB /* instagram.png */; };
-		3E42250222DE9A8A00A22FBB /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E42250122DE9A8900A22FBB /* facebook.png */; };
+		3E6A9CD622DFBDE6003D52DE /* comment.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6A9CD422DFBDE5003D52DE /* comment.png */; };
+		3E6A9CD722DFBDE6003D52DE /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6A9CD522DFBDE6003D52DE /* share.png */; };
+		3E6A9CDB22DFC248003D52DE /* commentnobackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6A9CDA22DFC248003D52DE /* commentnobackground.png */; };
+		3E6A9CDD22DFC24E003D52DE /* sharenobackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6A9CDC22DFC24E003D52DE /* sharenobackground.png */; };
+		3E6A9CDF22DFC49F003D52DE /* FirstTutorialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6A9CDE22DFC49F003D52DE /* FirstTutorialScreenViewController.swift */; };
+		3E6E229222E02D640023C3FE /* puppy sleeping.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E229122E02D640023C3FE /* puppy sleeping.jpg */; };
+		3E6E22D222E038AD0023C3FE /* SecondTutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E22D122E038AD0023C3FE /* SecondTutorialViewController.swift */; };
+		3E6E22D422E039810023C3FE /* horse.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E22D322E039810023C3FE /* horse.jpeg */; };
+		3E6E22D622E03AE30023C3FE /* ThirdTutorialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E22D522E03AE30023C3FE /* ThirdTutorialScreenViewController.swift */; };
+		3E97E8B922DF815B00E4D553 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E97E8B822DF815B00E4D553 /* instagram.png */; };
+		3E97E8BB22DF81AA00E4D553 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E97E8BA22DF81AA00E4D553 /* facebook.png */; };
+		3E97E8BD22DF825300E4D553 /* emailnobackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E97E8BC22DF825300E4D553 /* emailnobackground.png */; };
 		3EDAEF4322DC58EA00EA4DF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEF4222DC58EA00EA4DF1 /* AppDelegate.swift */; };
 		3EDAEF4522DC58EA00EA4DF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEF4422DC58EA00EA4DF1 /* ViewController.swift */; };
 		3EDAEF4822DC58EA00EA4DF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EDAEF4622DC58EA00EA4DF1 /* Main.storyboard */; };
@@ -42,8 +52,18 @@
 /* Begin PBXFileReference section */
 		3E4224F522DE557100A22FBB /* PersonalizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizationViewController.swift; sourceTree = "<group>"; };
 		3E4224F922DE991000A22FBB /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
-		3E4224FF22DE9A8400A22FBB /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = instagram.png; path = ../../instagram.png; sourceTree = "<group>"; };
-		3E42250122DE9A8900A22FBB /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = facebook.png; path = ../../facebook.png; sourceTree = "<group>"; };
+		3E6A9CD422DFBDE5003D52DE /* comment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comment.png; sourceTree = "<group>"; };
+		3E6A9CD522DFBDE6003D52DE /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		3E6A9CDA22DFC248003D52DE /* commentnobackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = commentnobackground.png; sourceTree = "<group>"; };
+		3E6A9CDC22DFC24E003D52DE /* sharenobackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharenobackground.png; sourceTree = "<group>"; };
+		3E6A9CDE22DFC49F003D52DE /* FirstTutorialScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTutorialScreenViewController.swift; sourceTree = "<group>"; };
+		3E6E229122E02D640023C3FE /* puppy sleeping.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "puppy sleeping.jpg"; sourceTree = "<group>"; };
+		3E6E22D122E038AD0023C3FE /* SecondTutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTutorialViewController.swift; sourceTree = "<group>"; };
+		3E6E22D322E039810023C3FE /* horse.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = horse.jpeg; sourceTree = "<group>"; };
+		3E6E22D522E03AE30023C3FE /* ThirdTutorialScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTutorialScreenViewController.swift; sourceTree = "<group>"; };
+		3E97E8B822DF815B00E4D553 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
+		3E97E8BA22DF81AA00E4D553 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		3E97E8BC22DF825300E4D553 /* emailnobackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emailnobackground.png; sourceTree = "<group>"; };
 		3EDAEF3F22DC58EA00EA4DF1 /* Vysus Welcome version 3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vysus Welcome version 3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EDAEF4222DC58EA00EA4DF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EDAEF4422DC58EA00EA4DF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,16 +131,26 @@
 			children = (
 				3EDAEF7022DC58FE00EA4DF1 /* swift + gif.swift */,
 				3EDAEF4222DC58EA00EA4DF1 /* AppDelegate.swift */,
-				3EDAEF4422DC58EA00EA4DF1 /* ViewController.swift */,
 				3EDAEF4622DC58EA00EA4DF1 /* Main.storyboard */,
-				3E4224F522DE557100A22FBB /* PersonalizationViewController.swift */,
+				3E6E22D522E03AE30023C3FE /* ThirdTutorialScreenViewController.swift */,
+				3EDAEF4422DC58EA00EA4DF1 /* ViewController.swift */,
 				CF0B3E1A22DE5340007EB881 /* AuthenticationViewController.swift */,
+				3E4224F522DE557100A22FBB /* PersonalizationViewController.swift */,
+				3E6A9CDE22DFC49F003D52DE /* FirstTutorialScreenViewController.swift */,
+				3E6E22D122E038AD0023C3FE /* SecondTutorialViewController.swift */,
 				3EDAEF4922DC58EB00EA4DF1 /* Assets.xcassets */,
 				3EDAEF4E22DC58EB00EA4DF1 /* Info.plist */,
+				3E6E229122E02D640023C3FE /* puppy sleeping.jpg */,
 				3EEA9FA322DD3D3500F45397 /* Visus.png */,
-				3E42250122DE9A8900A22FBB /* facebook.png */,
+				3E97E8BA22DF81AA00E4D553 /* facebook.png */,
+				3E6E22D322E039810023C3FE /* horse.jpeg */,
 				3E4224F922DE991000A22FBB /* email.png */,
-				3E4224FF22DE9A8400A22FBB /* instagram.png */,
+				3E6A9CDC22DFC24E003D52DE /* sharenobackground.png */,
+				3E6A9CD422DFBDE5003D52DE /* comment.png */,
+				3E6A9CDA22DFC248003D52DE /* commentnobackground.png */,
+				3E6A9CD522DFBDE6003D52DE /* share.png */,
+				3E97E8B822DF815B00E4D553 /* instagram.png */,
+				3E97E8BC22DF825300E4D553 /* emailnobackground.png */,
 			);
 			path = "Vysus Welcome version 3";
 			sourceTree = "<group>";
@@ -247,11 +277,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E97E8B922DF815B00E4D553 /* instagram.png in Resources */,
+				3E97E8BB22DF81AA00E4D553 /* facebook.png in Resources */,
 				3E4224FA22DE991000A22FBB /* email.png in Resources */,
-				3E42250222DE9A8A00A22FBB /* facebook.png in Resources */,
 				3EDAEF4A22DC58EB00EA4DF1 /* Assets.xcassets in Resources */,
+				3E6A9CD622DFBDE6003D52DE /* comment.png in Resources */,
+				3E97E8BD22DF825300E4D553 /* emailnobackground.png in Resources */,
+				3E6E229222E02D640023C3FE /* puppy sleeping.jpg in Resources */,
+				3E6A9CD722DFBDE6003D52DE /* share.png in Resources */,
+				3E6A9CDB22DFC248003D52DE /* commentnobackground.png in Resources */,
+				3E6A9CDD22DFC24E003D52DE /* sharenobackground.png in Resources */,
+				3E6E22D422E039810023C3FE /* horse.jpeg in Resources */,
 				3EEA9FA422DD3D3500F45397 /* Visus.png in Resources */,
-				3E42250022DE9A8400A22FBB /* instagram.png in Resources */,
 				3EDAEF4822DC58EA00EA4DF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -277,11 +314,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6E22D622E03AE30023C3FE /* ThirdTutorialScreenViewController.swift in Sources */,
 				CF0B3E1B22DE5340007EB881 /* AuthenticationViewController.swift in Sources */,
 				3EDAEF4522DC58EA00EA4DF1 /* ViewController.swift in Sources */,
 				3E4224F622DE557100A22FBB /* PersonalizationViewController.swift in Sources */,
 				3EDAEF7122DC58FE00EA4DF1 /* swift + gif.swift in Sources */,
 				3EDAEF4322DC58EA00EA4DF1 /* AppDelegate.swift in Sources */,
+				3E6A9CDF22DFC49F003D52DE /* FirstTutorialScreenViewController.swift in Sources */,
+				3E6E22D222E038AD0023C3FE /* SecondTutorialViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
