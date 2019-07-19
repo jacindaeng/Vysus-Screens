@@ -10,21 +10,32 @@ import UIKit
 
 class FirstTutorialScreenViewController: UIViewController {
 
+    @IBOutlet weak var upArrow: UIImageView!
+    @IBOutlet weak var downArrow: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // 3. Starting animation when app loads
+        self.beginAnimation()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
-    */
+    
+    // 2. Function to pulse 3x
+    func beginAnimation () {
+        UIView.animate(withDuration: 1.0, animations: {
+            UIView.setAnimationRepeatCount(100)
+            self.upArrow.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+            self.downArrow.transform = CGAffineTransform(scaleX: 1.2, y: 1.2)
+            
+        }, completion: {completion in
+            self.upArrow.transform = CGAffineTransform(scaleX: 1, y: 1)
+            self.downArrow.transform = CGAffineTransform(scaleX: 1, y: 1)
+        })
+        
 
+    }
 }

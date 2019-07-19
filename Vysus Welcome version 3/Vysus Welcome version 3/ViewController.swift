@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        uiBackground.backgroundColor = #colorLiteral(red: 0.7058823529, green: 0.4823529412, blue: 0.5490196078, alpha: 1)
-        logoImageView.image = UIImage(named: "Visus")
+        uiBackground.backgroundColor = #colorLiteral(red: 0.1215686275, green: 0.1568627451, blue: 0.2, alpha: 1)
+        logoImageView.image = UIImage(named: "logoNoBackground")
         animateImage()
         logoImageView.layer.cornerRadius = 100.0
         imageView.layer.cornerRadius = 113.0
@@ -50,7 +50,7 @@ class ViewController: UIViewController {
         rippleShape.bounds = CGRect(x: 0, y: 0, width: referenceView.bounds.size.width, height: referenceView.bounds.size.height)
         rippleShape.path = path.cgPath
         rippleShape.fillColor = UIColor.clear.cgColor
-        rippleShape.strokeColor =  #colorLiteral(red: 0.9647058824, green: 0.8352941176, blue: 0.7960784314, alpha: 1)
+        rippleShape.strokeColor = #colorLiteral(red: 0.4, green: 0.9882352941, blue: 0.9450980392, alpha: 1)
         rippleShape.lineWidth = 25
         rippleShape.position = shapePosition
         rippleShape.opacity = 0
