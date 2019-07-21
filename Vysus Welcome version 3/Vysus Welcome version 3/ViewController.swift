@@ -9,70 +9,88 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var smallerImageView: UIImageView!
-    @IBOutlet weak var imageView: UIImageView!
+    
     @IBOutlet var uiBackground: UIView!
-    @IBOutlet weak var logoImageView: UIImageView!
-   
+
+    @IBOutlet weak var imgvAvatar: UIImageView!
+    
+    @IBOutlet weak var imgvAvatara: UIImageView!
+    
+    var pulseArray = [CAShapeLayer]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        uiBackground.backgroundColor = #colorLiteral(red: 0.1215686275, green: 0.1568627451, blue: 0.2, alpha: 1)
-        logoImageView.image = UIImage(named: "logoNoBackground")
-        animateImage()
-        logoImageView.layer.cornerRadius = 100.0
-        imageView.layer.cornerRadius = 113.0
-        smallerImageView.layer.cornerRadius = 135.0
-        //imageView.layer.cornerRadius = 100.0
-        // Do any additional setup after loading the view.
+        uiBackground.backgroundColor = #colorLiteral(red: 0.1121171787, green: 0.1581867933, blue: 0.2041456699, alpha: 1)
+        imgvAvatar.layer.cornerRadius = imgvAvatar.frame.size.width/2.0
+        createPulse()
+        
+    }
+    
+    func createPulse() {
+        
+        for _ in 0...2 {
+            let circularPath = UIBezierPath(arcCenter: .zero, radius: ((self.imgvAvatar.superview?.frame.size.width )! )/1.8, startAngle: 0, endAngle: 2 * .pi , clockwise: true)
+            let pulsatingLayer = CAShapeLayer()
+            pulsatingLayer.path = circularPath.cgPath
+            pulsatingLayer.lineWidth = 25
+            pulsatingLayer.fillColor = UIColor.clear.cgColor
+            pulsatingLayer.lineCap = CAShapeLayerLineCap.round
+            pulsatingLayer.position = CGPoint(x: imgvAvatar.frame.size.width / 2.0, y: imgvAvatar.frame.size.width / 2.0)
+            imgvAvatar.layer.addSublayer(pulsatingLayer)
+            pulseArray.append(pulsatingLayer)
+        }
+        
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2, execute: {
+            self.animatePulsatingLayerAt(index: 0)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.4, execute: {
+                self.animatePulsatingLayerAt(index: 1)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                    self.animatePulsatingLayerAt(index: 2)
+                })
+            })
+        })
+        
+    }
+    
+    
+    func animatePulsatingLayerAt(index:Int) {
+        
+        //Giving color to the layer
+        pulseArray[index].strokeColor = #colorLiteral(red: 0.4, green: 0.9882352941, blue: 0.9450980392, alpha: 1)
+        
+        //Creating scale animation for the layer, from and to value should be in range of 0.0 to 1.0
+        // 0.0 = minimum
+        //1.0 = maximum
+        let scaleAnimation = CABasicAnimation(keyPath: "transform.scale")
+        scaleAnimation.fromValue = 0.3
+        scaleAnimation.toValue = 0.7
+        
+        //Creating opacity animation for the layer, from and to value should be in range of 0.0 to 1.0
+        // 0.0 = minimum
+        //1.0 = maximum
+        let opacityAnimation = CABasicAnimation(keyPath: #keyPath(CALayer.opacity))
+        opacityAnimation.fromValue = 0.9
+        opacityAnimation.toValue = 0.0
+        
+        // Grouping both animations and giving animation duration, animation repat count
+        let groupAnimation = CAAnimationGroup()
+        groupAnimation.animations = [scaleAnimation, opacityAnimation]
+        groupAnimation.duration = 2.3
+        groupAnimation.repeatCount = .greatestFiniteMagnitude
+        groupAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeOut)
+        //adding groupanimation to the layer
+        pulseArray[index].add(groupAnimation, forKey: "groupanimation")
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
-    func animateImage() { //function called addRippleEffect
-        addRippleEffect(to: imageView)
-        addRippleEffect(to: smallerImageView)
-    }
-
-    @IBAction func animateButton(_ sender: UIButton) {
-        addRippleEffect(to: sender)
-    }
-
-    func addRippleEffect(to referenceView: UIView) {
-        /*! Creates a circular path around the view*/
-        let path = UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: referenceView.bounds.size.width, height: referenceView.bounds.size.height))
-        /*! Position where the shape layer should be */
-        let shapePosition = CGPoint(x: referenceView.bounds.size.width / 2.0, y: referenceView.bounds.size.height / 2.0)
-        let rippleShape = CAShapeLayer()
-        rippleShape.bounds = CGRect(x: 0, y: 0, width: referenceView.bounds.size.width, height: referenceView.bounds.size.height)
-        rippleShape.path = path.cgPath
-        rippleShape.fillColor = UIColor.clear.cgColor
-        rippleShape.strokeColor = #colorLiteral(red: 0.4, green: 0.9882352941, blue: 0.9450980392, alpha: 1)
-        rippleShape.lineWidth = 25
-        rippleShape.position = shapePosition
-        rippleShape.opacity = 0
-
-        /*! Add the ripple layer as the sublayer of the reference view */
-        referenceView.layer.addSublayer(rippleShape)
-        /*! Create scale animation of the ripples */
-        let scaleAnim = CABasicAnimation(keyPath: "transform.scale")
-        scaleAnim.fromValue = NSValue(caTransform3D: CATransform3DIdentity)
-        scaleAnim.toValue = NSValue(caTransform3D: CATransform3DMakeScale(2, 2, 1))
-        /*! Create animation for opacity of the ripples */
-        let opacityAnim = CABasicAnimation(keyPath: "opacity")
-        opacityAnim.fromValue = 1
-        opacityAnim.toValue = nil
-        /*! Group the opacity and scale animations */
-        let animation = CAAnimationGroup()
-        animation.animations = [scaleAnim, opacityAnim]
-        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeIn)
-        animation.duration = CFTimeInterval(3.5)
-        animation.repeatCount = 100
-        animation.isRemovedOnCompletion = false
-        rippleShape.add(animation, forKey: "rippleEffect")
-    }
+    
 }
+
 

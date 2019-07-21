@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E27C5C222E42C96003EA2FE /* Visus.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E27C5C122E42C95003EA2FE /* Visus.png */; };
 		3E4224F622DE557100A22FBB /* PersonalizationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E4224F522DE557100A22FBB /* PersonalizationViewController.swift */; };
 		3E4224FA22DE991000A22FBB /* email.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E4224F922DE991000A22FBB /* email.png */; };
 		3E600CEA22E2376A00FA752B /* downArrowNoBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E600CE922E2376A00FA752B /* downArrowNoBackground.png */; };
@@ -36,7 +37,6 @@
 		3EDAEF5822DC58EB00EA4DF1 /* Vysus_Welcome_version_3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEF5722DC58EB00EA4DF1 /* Vysus_Welcome_version_3Tests.swift */; };
 		3EDAEF6322DC58EB00EA4DF1 /* Vysus_Welcome_version_3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEF6222DC58EB00EA4DF1 /* Vysus_Welcome_version_3UITests.swift */; };
 		3EDAEF7122DC58FE00EA4DF1 /* swift + gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EDAEF7022DC58FE00EA4DF1 /* swift + gif.swift */; };
-		3EEA9FA422DD3D3500F45397 /* Visus.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EEA9FA322DD3D3500F45397 /* Visus.png */; };
 		CF0B3E1B22DE5340007EB881 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF0B3E1A22DE5340007EB881 /* AuthenticationViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +58,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E27C5C122E42C95003EA2FE /* Visus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Visus.png; path = ../../../../Downloads/Visus.png; sourceTree = "<group>"; };
 		3E4224F522DE557100A22FBB /* PersonalizationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalizationViewController.swift; sourceTree = "<group>"; };
 		3E4224F922DE991000A22FBB /* email.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = email.png; sourceTree = "<group>"; };
 		3E600CE922E2376A00FA752B /* downArrowNoBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downArrowNoBackground.png; sourceTree = "<group>"; };
@@ -93,7 +94,6 @@
 		3EDAEF6222DC58EB00EA4DF1 /* Vysus_Welcome_version_3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vysus_Welcome_version_3UITests.swift; sourceTree = "<group>"; };
 		3EDAEF6422DC58EB00EA4DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EDAEF7022DC58FE00EA4DF1 /* swift + gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "swift + gif.swift"; sourceTree = "<group>"; };
-		3EEA9FA322DD3D3500F45397 /* Visus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Visus.png; path = "../../../New Technologist/Visus.png"; sourceTree = "<group>"; };
 		CF0B3E1A22DE5340007EB881 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -159,9 +159,9 @@
 				3EBCA97022E13B79009CE679 /* blueVisus.png */,
 				3E600CE922E2376A00FA752B /* downArrowNoBackground.png */,
 				3E6E229122E02D640023C3FE /* puppy sleeping.jpg */,
+				3E27C5C122E42C95003EA2FE /* Visus.png */,
 				3E600CEF22E2431900FA752B /* blueComment.png */,
 				3E600CF022E2431900FA752B /* blueShare.png */,
-				3EEA9FA322DD3D3500F45397 /* Visus.png */,
 				3E600CEB22E241D300FA752B /* blueDownArrow.png */,
 				3E600CEC22E241D300FA752B /* blueUpArrow.png */,
 				3EBCA96C22E12637009CE679 /* logoNoBackground.png */,
@@ -318,9 +318,9 @@
 				3E6A9CDB22DFC248003D52DE /* commentnobackground.png in Resources */,
 				3E6A9CDD22DFC24E003D52DE /* sharenobackground.png in Resources */,
 				3E6E22D422E039810023C3FE /* horse.jpeg in Resources */,
+				3E27C5C222E42C96003EA2FE /* Visus.png in Resources */,
 				3E600CEE22E241D300FA752B /* blueUpArrow.png in Resources */,
 				3E600CF122E2431900FA752B /* blueComment.png in Resources */,
-				3EEA9FA422DD3D3500F45397 /* Visus.png in Resources */,
 				3EDAEF4822DC58EA00EA4DF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
