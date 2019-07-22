@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         uiBackground.backgroundColor = #colorLiteral(red: 0.1121171787, green: 0.1581867933, blue: 0.2041456699, alpha: 1)
         imgvAvatar.layer.cornerRadius = imgvAvatar.frame.size.width/2.0
+        logoImageView.image = UIImage(named: "Visus")
         createPulse()
         
     }
