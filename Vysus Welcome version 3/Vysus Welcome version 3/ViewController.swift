@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imgvAvatar: UIImageView!
     
-    @IBOutlet weak var imgvAvatara: UIImageView!
+    @IBOutlet weak var logoImageView: UIImageView!
     
     var pulseArray = [CAShapeLayer]()
     
@@ -64,8 +64,8 @@ class ViewController: UIViewController {
         // 0.0 = minimum
         //1.0 = maximum
         let scaleAnimation = CABasicAnimation(keyPath: "transform.scale")
-        scaleAnimation.fromValue = 0.3
-        scaleAnimation.toValue = 0.7
+        scaleAnimation.fromValue = 0.4
+        scaleAnimation.toValue = 0.75
         
         //Creating opacity animation for the layer, from and to value should be in range of 0.0 to 1.0
         // 0.0 = minimum

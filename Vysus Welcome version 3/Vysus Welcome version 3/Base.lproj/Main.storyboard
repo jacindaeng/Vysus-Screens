@@ -18,12 +18,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Visus.png" translatesAutoresizingMaskIntoConstraints="NO" id="wIh-XV-6Ex">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Visus.png" translatesAutoresizingMaskIntoConstraints="NO" id="wIh-XV-6Ex">
                                 <rect key="frame" x="132" y="373" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="WBT-XN-deJ"/>
+                                    <constraint firstAttribute="height" constant="150" id="qwl-gC-e0i"/>
+                                </constraints>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IAH-nJ-2kn">
-                                <rect key="frame" x="20" y="258" width="380" height="380"/>
+                                <rect key="frame" x="14" y="258" width="380" height="380"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="380" id="EHV-lq-Nnr"/>
                                     <constraint firstAttribute="height" constant="380" id="PYV-Bf-XwB"/>
@@ -32,6 +35,10 @@
                         </subviews>
                         <color key="backgroundColor" red="0.12156862745098039" green="0.15686274509803921" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="wIh-XV-6Ex" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2gm-sa-cUE"/>
+                            <constraint firstItem="wIh-XV-6Ex" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5yH-CF-xLt"/>
+                            <constraint firstItem="wIh-XV-6Ex" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NFm-to-788"/>
+                            <constraint firstItem="wIh-XV-6Ex" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Pub-6h-aZn"/>
                             <constraint firstItem="IAH-nJ-2kn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UE3-dk-cFc"/>
                             <constraint firstItem="IAH-nJ-2kn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jXI-lF-HRg"/>
                         </constraints>
@@ -39,6 +46,7 @@
                     </view>
                     <connections>
                         <outlet property="imgvAvatar" destination="IAH-nJ-2kn" id="cpv-Cg-Edr"/>
+                        <outlet property="logoImageView" destination="wIh-XV-6Ex" id="M6E-8C-7Pt"/>
                         <outlet property="uiBackground" destination="8bC-Xf-vdC" id="TEv-le-joV"/>
                     </connections>
                 </viewController>
