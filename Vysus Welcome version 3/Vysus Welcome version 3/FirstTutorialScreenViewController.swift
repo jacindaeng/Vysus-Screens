@@ -10,10 +10,13 @@ import UIKit
 
 class FirstTutorialScreenViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var upArrow: UIImageView!
     @IBOutlet weak var downArrow: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageView.clipsToBounds = true
+        //imageView.layer.cornerRadius = 80.0
         
         // 3. Starting animation when app loads
         self.beginAnimation()

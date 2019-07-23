@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KQz-YF-lbE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hF8-hs-UUb">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -150,32 +150,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blueComment.png" translatesAutoresizingMaskIntoConstraints="NO" id="FJo-FC-uNM">
-                                <rect key="frame" x="87" y="70" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="commentnobackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="FJo-FC-uNM">
+                                <rect key="frame" x="157" y="139" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="10M-Wc-eYe"/>
+                                    <constraint firstAttribute="height" constant="100" id="50L-G8-1gu"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blueShare.png" translatesAutoresizingMaskIntoConstraints="NO" id="0E1-7s-K6E">
-                                <rect key="frame" x="87" y="702" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puppy sleeping.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Wf0-bS-6Kn">
+                                <rect key="frame" x="32" y="273" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="NKJ-iE-xTE"/>
+                                    <constraint firstAttribute="width" constant="350" id="RFz-2i-Bhj"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="puppy sleeping.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Wf0-bS-6Kn">
-                                <rect key="frame" x="20" y="238" width="374" height="377"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueUpArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jim-1g-Jj2">
+                                <rect key="frame" x="174.5" y="243" width="65" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="fDN-IG-aBC"/>
+                                    <constraint firstAttribute="height" constant="50" id="m5l-TC-JZY"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blueUpArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="Jim-1g-Jj2">
-                                <rect key="frame" x="130" y="189" width="154" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blueDownArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="ppr-wH-Hq3">
+                                <rect key="frame" x="174.5" y="605.5" width="65" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="R4p-3H-tdn"/>
+                                    <constraint firstAttribute="width" constant="65" id="WKB-G9-pGF"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blueDownArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="ppr-wH-Hq3">
-                                <rect key="frame" x="156" y="600" width="103" height="71"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sharenobackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="0E1-7s-K6E">
+                                <rect key="frame" x="157" y="664" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="2vD-QH-XxQ"/>
+                                    <constraint firstAttribute="width" constant="100" id="dax-Yo-TxR"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.1215686275" green="0.15686274510000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="ppr-wH-Hq3" firstAttribute="centerY" secondItem="7S5-3P-zvM" secondAttribute="centerY" constant="182.5" id="3T5-Mn-wzm"/>
+                            <constraint firstItem="Wf0-bS-6Kn" firstAttribute="centerX" secondItem="7S5-3P-zvM" secondAttribute="centerX" id="3am-82-rT3"/>
+                            <constraint firstItem="FJo-FC-uNM" firstAttribute="centerY" secondItem="7S5-3P-zvM" secondAttribute="centerY" constant="-259" id="7wJ-mc-vTX"/>
+                            <constraint firstItem="Wf0-bS-6Kn" firstAttribute="centerY" secondItem="7S5-3P-zvM" secondAttribute="centerY" id="BtZ-tU-19a"/>
+                            <constraint firstItem="0E1-7s-K6E" firstAttribute="centerY" secondItem="7S5-3P-zvM" secondAttribute="centerY" constant="266" id="DYD-ZD-PLU"/>
+                            <constraint firstItem="Jim-1g-Jj2" firstAttribute="centerX" secondItem="7S5-3P-zvM" secondAttribute="centerX" id="MDf-5L-Yvh"/>
+                            <constraint firstItem="ppr-wH-Hq3" firstAttribute="centerX" secondItem="7S5-3P-zvM" secondAttribute="centerX" id="NtM-aF-MrX"/>
+                            <constraint firstItem="FJo-FC-uNM" firstAttribute="centerX" secondItem="7S5-3P-zvM" secondAttribute="centerX" id="YTn-at-5h6"/>
+                            <constraint firstItem="Jim-1g-Jj2" firstAttribute="centerY" secondItem="7S5-3P-zvM" secondAttribute="centerY" constant="-180" id="c4s-PD-1IT"/>
+                            <constraint firstItem="0E1-7s-K6E" firstAttribute="centerX" secondItem="7S5-3P-zvM" secondAttribute="centerX" id="mw9-Nh-0a8"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="3qZ-mD-PLF"/>
                     </view>
                     <connections>
                         <outlet property="downArrow" destination="ppr-wH-Hq3" id="wUw-HG-tff"/>
+                        <outlet property="imageView" destination="Wf0-bS-6Kn" id="WzG-gK-k07"/>
                         <outlet property="upArrow" destination="Jim-1g-Jj2" id="1i2-sH-S45"/>
                     </connections>
                 </viewController>
@@ -352,10 +380,12 @@
         <image name="blueDownArrow.png" width="375" height="375"/>
         <image name="blueShare.png" width="375" height="375"/>
         <image name="blueUpArrow.png" width="375" height="375"/>
+        <image name="commentnobackground.png" width="373.92001342773438" height="373.92001342773438"/>
         <image name="emailnobackground.png" width="373.92001342773438" height="373.92001342773438"/>
         <image name="facebookCurvedEdges.png" width="375" height="375"/>
         <image name="horse.jpeg" width="1000" height="563"/>
         <image name="instagram.png" width="71.760002136230469" height="71.760002136230469"/>
         <image name="puppy sleeping.jpg" width="590" height="428"/>
+        <image name="sharenobackground.png" width="373.92001342773438" height="373.92001342773438"/>
     </resources>
 </document>
