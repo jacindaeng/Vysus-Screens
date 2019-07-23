@@ -17,10 +17,11 @@
 		3E6A9CDB22DFC248003D52DE /* commentnobackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6A9CDA22DFC248003D52DE /* commentnobackground.png */; };
 		3E6A9CDD22DFC24E003D52DE /* sharenobackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E6A9CDC22DFC24E003D52DE /* sharenobackground.png */; };
 		3E6A9CDF22DFC49F003D52DE /* FirstTutorialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6A9CDE22DFC49F003D52DE /* FirstTutorialScreenViewController.swift */; };
-		3E6E229222E02D640023C3FE /* puppy sleeping.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E229122E02D640023C3FE /* puppy sleeping.jpg */; };
 		3E6E22D422E039810023C3FE /* horse.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 3E6E22D322E039810023C3FE /* horse.jpeg */; };
-		3E6E22D622E03AE30023C3FE /* ThirdTutorialScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E6E22D522E03AE30023C3FE /* ThirdTutorialScreenViewController.swift */; };
 		3E786ED422E77FC30022D0F8 /* Visus.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E786ED322E77FC30022D0F8 /* Visus.png */; };
+		3E786ED822E789610022D0F8 /* husky.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3E786ED722E789610022D0F8 /* husky.jpg */; };
+		3E786EDA22E78BA20022D0F8 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E786ED922E78BA20022D0F8 /* ShareViewController.swift */; };
+		3E786EDC22E78E710022D0F8 /* CommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E786EDB22E78E710022D0F8 /* CommentsViewController.swift */; };
 		3E97E8B922DF815B00E4D553 /* instagram.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E97E8B822DF815B00E4D553 /* instagram.png */; };
 		3E97E8BB22DF81AA00E4D553 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E97E8BA22DF81AA00E4D553 /* facebook.png */; };
 		3E97E8BD22DF825300E4D553 /* emailnobackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E97E8BC22DF825300E4D553 /* emailnobackground.png */; };
@@ -65,10 +66,11 @@
 		3E6A9CDA22DFC248003D52DE /* commentnobackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = commentnobackground.png; sourceTree = "<group>"; };
 		3E6A9CDC22DFC24E003D52DE /* sharenobackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sharenobackground.png; sourceTree = "<group>"; };
 		3E6A9CDE22DFC49F003D52DE /* FirstTutorialScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTutorialScreenViewController.swift; sourceTree = "<group>"; };
-		3E6E229122E02D640023C3FE /* puppy sleeping.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "puppy sleeping.jpg"; sourceTree = "<group>"; };
 		3E6E22D322E039810023C3FE /* horse.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = horse.jpeg; sourceTree = "<group>"; };
-		3E6E22D522E03AE30023C3FE /* ThirdTutorialScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdTutorialScreenViewController.swift; sourceTree = "<group>"; };
 		3E786ED322E77FC30022D0F8 /* Visus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Visus.png; path = "../../../New Technologist/Visus.png"; sourceTree = "<group>"; };
+		3E786ED722E789610022D0F8 /* husky.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = husky.jpg; sourceTree = "<group>"; };
+		3E786ED922E78BA20022D0F8 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		3E786EDB22E78E710022D0F8 /* CommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsViewController.swift; sourceTree = "<group>"; };
 		3E97E8B822DF815B00E4D553 /* instagram.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = instagram.png; sourceTree = "<group>"; };
 		3E97E8BA22DF81AA00E4D553 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		3E97E8BC22DF825300E4D553 /* emailnobackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emailnobackground.png; sourceTree = "<group>"; };
@@ -142,7 +144,8 @@
 				3EDAEF7022DC58FE00EA4DF1 /* swift + gif.swift */,
 				3EDAEF4222DC58EA00EA4DF1 /* AppDelegate.swift */,
 				3EDAEF4622DC58EA00EA4DF1 /* Main.storyboard */,
-				3E6E22D522E03AE30023C3FE /* ThirdTutorialScreenViewController.swift */,
+				3E786EDB22E78E710022D0F8 /* CommentsViewController.swift */,
+				3E786ED922E78BA20022D0F8 /* ShareViewController.swift */,
 				3EDAEF4422DC58EA00EA4DF1 /* ViewController.swift */,
 				3E4224F522DE557100A22FBB /* PersonalizationViewController.swift */,
 				3E6A9CDE22DFC49F003D52DE /* FirstTutorialScreenViewController.swift */,
@@ -150,9 +153,9 @@
 				3EDAEF4E22DC58EB00EA4DF1 /* Info.plist */,
 				3EBCA97022E13B79009CE679 /* blueVisus.png */,
 				3E600CE922E2376A00FA752B /* downArrowNoBackground.png */,
-				3E6E229122E02D640023C3FE /* puppy sleeping.jpg */,
 				3E600CEF22E2431900FA752B /* blueComment.png */,
 				3E600CF022E2431900FA752B /* blueShare.png */,
+				3E786ED722E789610022D0F8 /* husky.jpg */,
 				3E600CEB22E241D300FA752B /* blueDownArrow.png */,
 				3E600CEC22E241D300FA752B /* blueUpArrow.png */,
 				3EACB54322E63C6E002C7755 /* facebookCurvedEdges.png */,
@@ -304,8 +307,8 @@
 				3EBCA96D22E12638009CE679 /* logoNoBackground.png in Resources */,
 				3E97E8BD22DF825300E4D553 /* emailnobackground.png in Resources */,
 				3EACB54422E63C6E002C7755 /* facebookCurvedEdges.png in Resources */,
+				3E786ED822E789610022D0F8 /* husky.jpg in Resources */,
 				3E600CEA22E2376A00FA752B /* downArrowNoBackground.png in Resources */,
-				3E6E229222E02D640023C3FE /* puppy sleeping.jpg in Resources */,
 				3E6A9CDB22DFC248003D52DE /* commentnobackground.png in Resources */,
 				3E6A9CDD22DFC24E003D52DE /* sharenobackground.png in Resources */,
 				3E6E22D422E039810023C3FE /* horse.jpeg in Resources */,
@@ -336,9 +339,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E6E22D622E03AE30023C3FE /* ThirdTutorialScreenViewController.swift in Sources */,
+				3E786EDA22E78BA20022D0F8 /* ShareViewController.swift in Sources */,
 				3EDAEF4522DC58EA00EA4DF1 /* ViewController.swift in Sources */,
 				3E4224F622DE557100A22FBB /* PersonalizationViewController.swift in Sources */,
+				3E786EDC22E78E710022D0F8 /* CommentsViewController.swift in Sources */,
 				3EDAEF7122DC58FE00EA4DF1 /* swift + gif.swift in Sources */,
 				3EDAEF4322DC58EA00EA4DF1 /* AppDelegate.swift in Sources */,
 				3E6A9CDF22DFC49F003D52DE /* FirstTutorialScreenViewController.swift in Sources */,

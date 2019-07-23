@@ -1,17 +1,19 @@
 //
-//  ThirdTutorialScreenViewController.swift
+//  ShareViewController.swift
 //  Vysus Welcome version 3
 //
-//  Created by Jacinda Eng on 7/17/19.
+//  Created by Jacinda Eng on 7/23/19.
 //  Copyright © 2019 Jacinda Eng. All rights reserved.
 //
 
 import UIKit
 
-class ThirdTutorialScreenViewController: UIViewController {
+class ShareViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageView.image = UIImage(named: "husky.jpg")
 
         // Do any additional setup after loading the view.
     }
